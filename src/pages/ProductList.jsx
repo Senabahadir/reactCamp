@@ -1,5 +1,6 @@
 import React from 'react'
-import { Icon, Label, Menu, Table } from 'semantic-ui-react'
+import { Icon,  Menu, Table } from 'semantic-ui-react'
+import {Link} from 'react-router-dom'
 
 export default function ProductList() {
   return (
@@ -10,18 +11,18 @@ export default function ProductList() {
         <Table.HeaderCell>Header</Table.HeaderCell>
         <Table.HeaderCell>Header</Table.HeaderCell>
         <Table.HeaderCell>Header</Table.HeaderCell>
+        <Table.HeaderCell>Header</Table.HeaderCell>
+        <Table.HeaderCell>Header</Table.HeaderCell>
       </Table.Row>
     </Table.Header>
 
     <Table.Body>
       <Table.Row>
-        <Table.Cell>
+        {/* <Table.Cell>
           <Label ribbon>First</Label>
-        </Table.Cell>
+        </Table.Cell> */}
+        <Table.Cell> <Link to={ '/products/$' } > Cell </Link> </Table.Cell>
         <Table.Cell>Cell</Table.Cell>
-        <Table.Cell>Cell</Table.Cell>
-      </Table.Row>
-      <Table.Row>
         <Table.Cell>Cell</Table.Cell>
         <Table.Cell>Cell</Table.Cell>
         <Table.Cell>Cell</Table.Cell>
@@ -30,12 +31,22 @@ export default function ProductList() {
         <Table.Cell>Cell</Table.Cell>
         <Table.Cell>Cell</Table.Cell>
         <Table.Cell>Cell</Table.Cell>
+        <Table.Cell>Cell</Table.Cell>
+        <Table.Cell>Cell</Table.Cell>
       </Table.Row>
+      <Table.Row>
+        <Table.Cell>Cell</Table.Cell>
+        <Table.Cell>Cell</Table.Cell>
+        <Table.Cell>Cell</Table.Cell>
+        <Table.Cell>Cell</Table.Cell>
+        <Table.Cell>Cell</Table.Cell>
+      </Table.Row>
+      
     </Table.Body>
 
     <Table.Footer>
       <Table.Row>
-        <Table.HeaderCell colSpan='3'>
+        <Table.HeaderCell colSpan='5'>
           <Menu floated='right' pagination>
             <Menu.Item as='a' icon>
               <Icon name='chevron left' />
