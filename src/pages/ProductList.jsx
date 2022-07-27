@@ -21,7 +21,7 @@ export default function ProductList() {
         {/* <Table.Cell>
           <Label ribbon>First</Label>
         </Table.Cell> */}
-        <Table.Cell> <Link to={ '/products/$' } > Cell </Link> </Table.Cell>
+        <Table.Cell> <Link to={ '/products/1' } > Cell </Link> </Table.Cell>
         <Table.Cell>Cell</Table.Cell>
         <Table.Cell>Cell</Table.Cell>
         <Table.Cell>Cell</Table.Cell>
