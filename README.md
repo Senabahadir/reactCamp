@@ -68,3 +68,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Adımlar
+### `npx create-react-app project-name`
+### `npm install`
+
+semantic.ui install:
+### `npm install semantic-ui-react semantic-ui-css`  
+
+Hata--
+Çözüm
+### `npm install --dev @semantic-ui-react/css-patch`
+
+Add it as a postinstall script to your package.json
+{
+ "scripts": {
+   "postinstall": "semantic-ui-css-patch"
+ }
+}
+### `npm run postinstall`
+(https://github.com/Semantic-Org/Semantic-UI/issues/7073)
+
+router işlemleri için:
+### `npm install react-router-dom`
