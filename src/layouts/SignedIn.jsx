@@ -5,8 +5,8 @@ export default function SignedIn(props) {
   return (
     <div>
         <Menu.Item>
-            <Image avatar spaced="right" src="https://pbs.twimg.com/profile_images/1527521140025004040/NAcUvv_f_400x400.jpg"/>
-            <Dropdown pointing="top left" text="Vestel">
+            <Image avatar spaced="right" src="https://pbs.twimg.com/profile_images/1478481906396246021/CFjLq2ik_400x400.jpg"/>
+            <Dropdown pointing="top left" text="Sena">
             <Dropdown.Menu>
                 <Dropdown.Item text="Bilgilerim" icon="info"/>
                 <Dropdown.Item onClick ={props.signOut} text="Çıkış Yap" icon="sign out"/>
