@@ -91,3 +91,10 @@ Add it as a postinstall script to your package.json
 
 router işlemleri için:
 ### `npm install react-router-dom`
+
+redux için:
+
+### `npm install react-redux`
+### `npm install redux`
+### `npm install redux-devtools-extension`
+
