@@ -4,8 +4,11 @@ import { Container, Menu } from 'semantic-ui-react'
 import CartSummary from './CartSummary'
 import SignedIn from './SignedIn'
 import SignedOut from './SignedOut'
+import { useSelector } from 'react-redux'
+
 
 export default function Navi() {
+    const {cartItems} = useSelector(state => state.cart)
     const [isAuthenticated, setIsAuthenticated] = useState(true)
 
     const navigate = useNavigate()   // const history = useHistory()
@@ -26,7 +29,7 @@ export default function Navi() {
                 <Menu.Item name='messages' />
 
                 <Menu.Menu position='right'>
-                    <CartSummary></CartSummary>
+                     {cartItems.lenght>0&&<CartSummary/>}  {/* eleman sayısı 0dan büyükse CartSummary'i render et demek */}
 
                     {isAuthenticated?<SignedIn signOut={handleSignOut} bisey="1"/>
                     :<SignedOut signIn={handleSignIn}/>}

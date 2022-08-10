@@ -100,3 +100,4 @@ redux için:
 
 chrom'a redux devtools eklentisi eklendi.
 
+### `npm install react-toastify`

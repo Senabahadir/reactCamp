@@ -1,8 +1,19 @@
 import React from 'react'
-import { Icon,  Menu, Table } from 'semantic-ui-react'
+import { Icon,  Menu, Table, Button } from 'semantic-ui-react'
 import {Link} from 'react-router-dom'
+// import { useDispatch } from 'react-redux'
+// import { addToCart } from '../store/actions/cartAction'
+// import { toast } from 'react-toastify'
 
 export default function ProductList() {
+
+  // const dispatch = useDispatch() //dispatch = fonksiyon çağırmak için
+  
+  // const handleAddToCart = (product) =>{
+  //   dispatch(addToCart(product))
+  //   toast.success(`${product.productName} sepete eklendi`)
+  // }
+
   return (
     <div>
           <Table celled>
@@ -13,6 +24,7 @@ export default function ProductList() {
         <Table.HeaderCell>Header</Table.HeaderCell>
         <Table.HeaderCell>Header</Table.HeaderCell>
         <Table.HeaderCell>Header</Table.HeaderCell>
+        <Table.HeaderCell></Table.HeaderCell>
       </Table.Row>
     </Table.Header>
 
@@ -26,6 +38,7 @@ export default function ProductList() {
         <Table.Cell>Cell</Table.Cell>
         <Table.Cell>Cell</Table.Cell>
         <Table.Cell>Cell</Table.Cell>
+        {/* <Table.Cell><Button onClick={()=>handleAddToCart("product")}>Sepete Ekle</Button></Table.Cell> */}
       </Table.Row>
       <Table.Row>
         <Table.Cell>Cell</Table.Cell>
