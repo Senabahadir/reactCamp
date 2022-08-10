@@ -98,3 +98,5 @@ redux için:
 ### `npm install redux`
 ### `npm install redux-devtools-extension`
 
+chrom'a redux devtools eklentisi eklendi.
+
